@@ -1,0 +1,16 @@
+import pandas as py
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=['jan','feb','mar','apr','may','jun','jul']
+y1=[800,700,400,300,100,30,10]
+y2=[190,180,170,180,190,170,200]
+plt.plot(x,y1,'m--',marker ='o',color='blue',label='jackets',)
+plt.plot(x,y2,marker='*',color='red',label='socks', linestyle = 'dotted')
+plt.xticks(x,  rotation ='vertical')
+plt.yticks(np.arange(100,900,step=100),  rotation ='vertical')
+plt.xlabel('Months')
+plt.title('Revenue of Jackets and Socks')
+
+plt.legend(loc='upper center', ncol=2)
+plt.show()
