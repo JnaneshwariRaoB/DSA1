@@ -1,0 +1,37 @@
+import pandas as pd
+data={
+    'Name':['john','Emma','Snat','Lisa','Tom'],
+    'Age':[25,30,28,32,27],
+    'Country':['USA','Canada','India','UK','Australian'],
+    'Salary':[50000,60000,70000,80000,65000]
+}
+df=pd.DataFrame(data)
+print('Original Data Frame')
+print(df)
+
+name_age=df[['Name','Age']]
+print("Name and Age columns" )
+print(name_age)
+
+filetered_df=df[df['Country']=='USA']
+print("\n Filtered DataFrame (Country='USA')")
+print(filetered_df)
+
+sorted_df=df.sort_values("Salary",ascending=False)
+print("\n Sorted Data Frame(by Salary in descending order)")
+print(sorted_df)
+
+average_salary=df['Salary'].mean()
+print("\n Average",average_salary)
+
+df['Experience']=[3,6,4,8,5]
+print("\n Data Frame with added experience ")
+print(df)
+
+df.loc[df['Name']=='Emma','Salary']=65000
+print("\n Data Frame with Upadating emma Salary")
+print(df)
+
+df.drop('Experience',axis=1)
+print("\n Data Frame after deleting column")
+print(df)
