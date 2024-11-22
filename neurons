@@ -40,4 +40,15 @@ print("Input :\n"+str(x))
 print("Actaul:\n"+str(y))
 print("Predicited:\n",output)
     
-    
+Input :
+[[0.66666667 1.        ]
+ [0.33333333 1.        ]
+ [1.         0.66666667]]
+Actaul:
+[[0.92]
+ [0.86]
+ [0.89]]
+Predicited:
+ [[0.89248872]
+ [0.8800047 ]
+ [0.89753042]]
