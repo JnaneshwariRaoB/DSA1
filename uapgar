@@ -30,3 +30,28 @@ class MRStudentGrades(MRJob):
 
 if __name__ == '__main__':
     MRStudentGrades.run()
+
+in hello.csv
+
+
+Alice,85,90,78
+Bob,92,88,94
+Charlie,60,65,58
+Alic,85,90,78
+Bb,92,88,9
+Chrlie,6,6,7   in input.csv
+
+D:\jann>python hello.py input.csv
+No configs found; falling back on auto-configuration
+No configs specified for inline runner
+Creating temp directory C:\Users\Sahyadri\AppData\Local\Temp\hello.Sahyadri.20241213.043453.175719
+Running step 1 of 1...
+job output is in C:\Users\Sahyadri\AppData\Local\Temp\hello.Sahyadri.20241213.043453.175719\output
+Streaming final output from C:\Users\Sahyadri\AppData\Local\Temp\hello.Sahyadri.20241213.043453.175719\output...
+"Alic"  "A"
+"Alice" "A"
+"Bb"    "B"
+"Bob"   "A+"
+"Charlie"       "B"
+"Chrlie"        "F"
+Removing temp directory C:\Users\Sahyadri\AppData\Local\Temp\hello.Sahyadri.20241213.043453.175719...
